@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>projet11</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    <nav>
+            <div class="flex items-center justify-around cursor-pointer  gap-4 p-[1rem]">
+                <div class="lg:block hidden">
+                <img src="./image/iphonecmr.png" alt="iphonecmr">
+              </div>  
+           <form class=" max-w-md mx-auto lg:block hidden">   
+             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+             <div class="relative">
+               <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+              </div>
+               <input type="search" id="default-search" class="block relative w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+             </div>
+           </form>
+       <div class="navList absolute lg:relative  lg:text-[1rem] text-[1.5rem] backdrop-blur-[0.1rem]  px-[2rem] lg:px-0  left-[50%] lg:left-0 top-[-1%] lg:top-0 w-[50%] lg:w-[40%] lg:h-0 flex items-center"  >
+          <div class=" flex lg:flex-row flex-col lg:items-center lg:justify-around lg:gap-4 gap-14">
+                <p class="hover:text-black text-gray-400">Home</p>
+                <p class="text-gray-400 hover:text-black">About</p>
+                <p class="text-gray-400 hover:text-black">Contact us</p>
+                <p class="text-gray-400 hover:text-black ">Blog</p>
+                <img src="./image/Favorite.png" alt="" class="lg:block hidden">
+                <img src="./image/ride.png" alt="" class="lg:block hidden">
+               <img src="./image/toy.png" alt="" class="lg:block hidden">
+            </div>
+        </div>
+        
+   <div class="lg:hidden block flex items-center  justify-between pt-[2rem] lg:p-[2rem] gap-[13rem] lg:m-0 mx-auto py-auto">
+    <div>
+    <img src="./image/Logo1.png" alt="">
+</div>
+<div>
+    <span class="menu material-symbols-outlined h-[2rem] cursor-pointer" onclick="change(this)">
+        menu
+        </span>
+    </div>
+</div>
+    </nav>
+        <section class=" absolute filter backdrop-blur-[0.1rem]  lg:h-[4rem] transition ease-in-out duration-700   bg-black lg:relative right-[50%]  lg:right-0 top-[1%] lg:top-0  w-full " >
+            <div class="myNav flex lg:flex-row flex-col lg:items-center lg:justify-around  gap-14 lg:gap-0 h-[60vh]"  >
+                <div class="flex">
+                    <img src="./image/Phonenav.png" alt="jouet telephone">
+                    <h3>Phone</h3>
+                   
+                </div>
+                <div class="flex">
+                     <img src="./image/Computer.png" alt="jouet telephone">
+                    <h3>Computer</h3>
+                </div>
+                <div class="flex">
+                     <img src="./image/Game.png" alt="jouet telephone">
+                    <h3>Smart Watches</h3>
+                </div>
+                <div class="flex items-center">
+                     <img src="./image/Headphone.png" alt="jouet telephone" >
+                    <h3>Headphones</h3>
+                </div>
+                <div class="flex">
+                     <img src="./image/Game.png" alt="jouet telephone">
+                    <h3>Gaming</h3>
+                </div>
+            </div>
+        </section>
+        <section class="lg:flex items-center justify-between pt-[3rem] px-[2rem] lg:p-0" id="iphone">
+            <div class="text-gray-400 flex flex-col gap-1 pl-[6rem]">
+                <h5 class="text-[1.3rem]">Pro.Beyond.</h5>
+                <h1 class="text-[4rem] font-light">Iphone 14 <b>Pro</b></h1>
+                <h3 class="">Created to change everything for the better</h3>
+                <button type="button" class="border-2 h-[3rem] w-[8rem] rounded-lg">Shop now</button>
+            </div>
+          <img src="./image/Iphone .png" alt="">
+        </section>
+      <section>
+        <div class="grid grid-cols-3 grid-rows-2 gap-[1rem] bg-pink-300">
+            <div class="col-span-2 bg-red-700">1</div>
+           
+            <div class="col-span-2 bg-blue-500">3</div>
+           
+            <div class="row-span-3 ">5</div>
+      </section>
+       <section class="flex flex-col px-[5rem] py-[2rem]">
+        <div class="flex items-center justify-between">
+            <h1>Browse  By Category</h1>
+            <div class="flex">
+                <img src="./image/left.png" alt="">
+                <img src="./image/right.png" alt="">
+            </div>
+        </div>
+        <div class="flex items-center justify-around p-[2rem]">
+            <div class="flex flex-col border-3 bg-gray-300 h-full">
+                <img src="./image/Phonenav.png" alt="">
+                <p>Phones</p>
+            </div>
+            <div  class="flex flex-col border-3  bg-gray-300">
+                <img src="./image/key.png" alt="" class=" h-[5rem]">
+               <p>Smart Watches</p>
+            </div>
+            <div  class="flex flex-col border-3  bg-gray-300 ">
+                <img src="./image/camera.png" alt="">
+                <p>Camera</p>
+            </div>
+            <div  class="flex flex-col border-3  bg-gray-300 ">
+                <img src="./image/Computer.png" alt="">
+                <p>Computer</p>
+            </div>
+            <div  class="flex flex-col border-3 bg-gray-300 ">
+                <img src="./image/Game.png" alt="">
+                <p>Gaming</p>
+            </div>
+        </div>
+       </section>
+       <section class="flex flex-col p-[7rem] gap-[2rem]">
+        <div class="flex p-4 gap-4">
+            <a href="New Arrival"><p class="text-gray-400 hover:text-black hover:underline">New Arrival</p></a>
+            <a href="Bestseller"><p class="text-gray-400">Bestseller</p></a>
+                <a href="Featured Products"><p class="text-gray-400">Featured Products</p></a>
+        </div>
+       <div>
+        <div  class=" flex gap-6 h-full w-full">
+            <div class="flex-1 border-2 rounded-lg  bg-[#FAFAFA]">
+               <div  class="pl-[8rem]"><img src="./image/Favorite.png" alt=""></div>
+                <img src="./image/phone6.png" alt="">
+                <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+                <p>Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                <p>$900</p>
+                <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+            </div>
+            </div>
+          <div class="flex-1 border-2 rounded-lg px-[2rem] pt-[3.5rem] bg-[#FAFAFA]">
+            <div class="pl-[6rem] pb-[2rem]"><img src="./image/Favorite.png" alt=""></div>
+           <img src="./image/camera1.png" alt="" class="">
+           <div class="flex flex-col justify-between gap-4  items-center">
+           <p>Blackmagic Pocket Cinema Camera 6k</p>
+           <p>$2535</p>
+           <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div> 
+        </div>
+          <div class="flex-1 border-2 rounded-lg p-[2rem] bg-[#FAFAFA]">
+            <img src="./image/Favorite.png" alt="">
+            <img src="./image/watch4.png" alt="">
+            <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+            <p>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</p>
+            <p>$399</p>
+           <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div>
+        </div>
+          <div class="flex-1 border-2 rounded-lg px-[2rem] pt-[5rem] bg-[#FAFAFA]">
+            <img src="./image/Favorite.png" alt="">
+           <img src="./image/casque1.png" alt="">
+           <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+           <p>AirPods Max Silver</p>
+           <p>$549</p>
+           <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div>
+        </div>
+        </div>
+        <div class=" flex gap-6 h-full w-full ">
+        <div class="flex-1 bg-[#FAFAFA] border-2 rounded-lg p-[2rem]">
+            <img src="./image/Favorite.png" alt="">
+            <img src="./image/watch3.png" alt="">
+            <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+            <p>Samsung Galaxy Watch6 Classic 47mm Black</p>
+            <p>$369</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div>
+        </div>
+        <div class="flex-1 border-2 rounded-lg p-[2rem] bg-[#FAFAFA]">
+            <img src="./image/red.png" alt="">
+            <img src="./image/phone7.png" alt="">
+            <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+            <p>Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</p>
+            <p>$1799</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div>
+        </div>
+        <div class="flex-1 border-2 rounded-lg px-[2rem] pt-[3.5rem] bg-[#FAFAFA]">
+            <img src="./image/Favorite.png" alt="">
+            <img src="./image/airpod2.png" alt="">
+            <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+            <p>Galaxy Buds FEGraphite</p>
+            <p>$99.99</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div> 
+        </div>
+        <div class="flex-1 border-2 rounded-lg p-[2rem] bg-[#FAFAFA]">
+            <img src="./image/Favorite.png" alt="">
+            <img src="./image/phone4.png" alt="">
+            <div class="flex flex-col justify-between gap-4 pt-[1rem] items-center">
+            <p>Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</p>
+            <p>$398</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+        </div>
+        </div>
+    </div>
+       </div>
+       </section>
+       <section class="py-[2rem]">
+        <div class="flex justify-between">
+            <div>
+            <div class="flex">
+                <img src="./image/airpod1.png" alt="" class="absolute left object-bottom object-none">
+                <img src="./image/watch2.png" alt="" class="object-right object-top">
+            </div>
+                <div  class="flex flex-col gap-4 px-[2rem] mt-[2rem]">
+                    <h1 class="text-[1.7rem]">Popular Products</h1>
+                    <p class="text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+                <button type="button" class="border-2  border-black my-4   h-[3rem] w-[8rem] rounded-lg">Shop now</button>
+                </div>
+            </div>
+            <div class="bg-[#F9F9F9]">
+                <img src="./image/phone3.png" alt="">
+                <div class="flex flex-col gap-4 mt-[1rem] px-[2rem]">
+                    <h1 class="text-[1.7rem]">ipad pro</h1>
+                    <p class="text-[#909090] ">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+                <button type="button" class="border-2  border-black my-3  h-[3rem] w-[8rem] rounded-lg">Shop now</button>
+                </div>
+            </div>
+            <div class="bg-[#EAEAEA]">
+                <img src="./image/phone2.png" alt="">
+                <div class="flex flex-col gap-4 px-[2rem]">
+                    <h1 class="text-[1.7rem]">Samsung Galaxy</h1>
+                    <p class="text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+                <button type="button" class="border-2  border-black my-3  h-[3rem] w-[8rem] rounded-lg">Shop now</button>
+                </div>
+            </div>
+            <div class="p-0 m-0  object-right object-none bg-[#2C2C2C]">
+                <img src="./image/macbook1.png" alt="" class="h-[18rem] w-full">
+             <div class="flex flex-col gap-4 px-[2rem]">
+                <h1 class="text-white text-[1.7rem]">Macbook Pro</h1>
+                    <p class="text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+                <button type="button" class="border-2 h-[3rem] w-[8rem] border-white text-white  my-3 rounded-lg">Shop now</button>
+            </div>  
+            </div>
+        </div>
+       </section>
+       <section class="p-[2rem] ">
+        <h1 class="text-[2rem] py-[1rem]">Discounts up to -50%</h1>
+        <div class="flex items-center justify-around  gap-4">
+            <div class="flex-1 border-gray-300 border-2 bg-gray-100 p-4">
+                <img src="./image/Favorite.png" alt="">
+                <img src="./image/phone8.png" alt="">
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+                <p>$1437</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+            </div>
+            <div class="flex-1 border-gray-300 bg-gray-100 border-2 p-4">
+                 <img src="./image/Favorite.png" alt="">
+                <img src="./image/casque1.png" alt="">
+                <p>AirPods Max Silver</p>
+                <p>$549</p>
+              <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button>
+            </div>
+            <div class="flex-1 border-gray-300 border-2 bg-gray-100 p-4"> <img src="./image/Favorite.png" alt="">
+                <img src="./image/watch4.png" alt="">
+                <p>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</p>
+                <p>$399</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button></div>
+            <div class="flex-1 border-gray-300 border-2 p-4 bg-gray-100"> <img src="./image/Favorite.png" alt="">
+                <img src="./image/phone9.png" alt="">
+                <p>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</p>
+                <p>$1499</p>
+            <button type="button" class="border-black border-2 h-[3rem] w-[8rem] rounded-lg  bg-black text-white">Shop now</button></div>
+        </div>
+       </section>
+       <section class="bg-[#2E2E2E] h-[24rem] w-full">
+               <img  src="./image/behind.png" alt="" class="relative top-[0.11rem] left-[6rem]">
+               <img src="./image/image 18 (1).png" alt="" class="relative top-[-2rem]">
+                <img src="./image/tablet3.png" alt="" class="relative top-[-3.9rem] right-[-0.rem] ">
+                <img src="./image/phone1.png" alt=""  class="relative  top-[-29.4rem] right-[-61.9rem]">
+                <img src="./image/watch1.png" alt="" class="relative top-[-34.4rem] left-[51.7rem]">
+             <div class="relative top-[-48rem] left-[25rem] text-white">
+                <h1 class="text-[4rem] font-thin">Big Summer <b>Sale</b></h1>
+                <p>Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+                <button type="button" class="border-2 mx-[7rem] border-white my-3  h-[3rem] w-[8rem] rounded-lg">Shop now</button>
+            </div>
+    </section>
+       <footer class="text-white bg-black p-[3rem]">
+        <div class="flex gap-[2rem] p-[7rem]">
+            <div class="flex-1">
+                <img src="./image/Logo.png" alt="">
+                <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+            </div>
+            <div  class="flex-1">
+                <h1>Services</h1>
+                <p>Bonus Program</p>
+                <p>Gifts Cards</p>
+                <p>Credit and Payment</p>
+                <p>Service Contacts</p>
+                <p>Non-cash account</p>
+                <p>Payments</p>
+            </div>
+            <div  class="flex-1">
+                <h1>Assistance to the buyer</h1>
+                <p>Find an Order</p>
+                <p>Terms of Delivery</p>
+                <p>Exchange and return of Goods</p>
+                <p>Guarantee</p>
+                <p>Frequently asked questions</p>
+                <p>Terms of use of the site</p>
+            </div>
+        </div>
+        <div class="flex gap-[2rem] px-[7rem]">
+            <a href="twitter.com"><img src="./image/Twitter.png" alt="twitter"></a>
+                <a href="facebook.com"><img src="./image/facebook.png" alt="facebook"></a>
+                <a href="tiktok.com"><img src="./image/tiktok.png" alt="tiktok"></a>
+            <a href="camera"><img src="./image/mail.png" alt="camera"></a>
+        </div>
+       </footer>
+ <script src="./index.js"></script>   
+</body>
+</html>
